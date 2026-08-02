@@ -53,7 +53,8 @@ a{ color: inherit; text-decoration:none; }
 .wrap{
   max-width: var(--max-w);
   margin: 0 auto;
-  padding: 0 32px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .eyebrow{
@@ -623,7 +624,7 @@ p{ line-height: 1.7; color: var(--ink-soft); }
   font-weight: 400;
   font-size: clamp(1.5rem, 3.4vw, 2.3rem);
   color: var(--green-deep);
-  max-width: 840px;
+  max-width: 600px;
   margin: 0 auto;
   line-height: 1.5;
   position:relative;
@@ -669,7 +670,7 @@ p{ line-height: 1.7; color: var(--ink-soft); }
   transition: transform .35s var(--ease), box-shadow .35s var(--ease);
 }
 .value-card:hover{ transform: translateY(-6px); box-shadow: 0 24px 44px -22px rgba(27,36,27,.25); }
-.value-card .num{
+.value-card .icon{
   font-family: var(--f-display);
   font-style: italic;
   color: var(--gold);
@@ -679,6 +680,18 @@ p{ line-height: 1.7; color: var(--ink-soft); }
 }
 .value-card h3{ font-size: 1.3rem; margin-bottom: 10px; }
 .value-card p{ font-size: .96rem; margin:0; }
+
+.inline-link {
+  color: var(--gold);
+  text-decoration: underline;
+  text-decoration-color: var(--gold);
+  text-underline-offset: 3px;
+}
+
+.inline-link:hover {
+  color: var(--green-deep);
+  text-decoration-color: var(--green-deep);
+}
 
 .about-cta{
   text-align:center;
@@ -798,8 +811,8 @@ p{ line-height: 1.7; color: var(--ink-soft); }
   padding: 14px 8px;
   font-family: var(--f-hero);
 }
-.event-date .month{ font-size:.72rem; letter-spacing:.1em; text-transform:uppercase; color: var(--gold-soft); }
-.event-date .day{ font-family: var(--f-display); font-size: 1.7rem; line-height:1.1; }
+.event-date .month{ display: block; font-size:.72rem; letter-spacing:.1em; text-transform:uppercase; color: var(--gold-soft); }
+.event-date .day{ display: block; font-family: var(--f-display); font-size: 1.7rem; line-height:1.1; }
 .event-main h3{ font-size:1.35rem; margin-bottom:8px; }
 .event-meta{
   display:flex;
@@ -876,25 +889,30 @@ p{ line-height: 1.7; color: var(--ink-soft); }
   }
   .hero-sub{
     position: absolute;
-    top: 220px;
-    left: 63%;
+    top: 200px;
+    left: 62%;
     transform: translateX(-50%);
     font-size: clamp(0.8rem, 3.4vw, 1rem);
   }
   .hero-verse{
     position: absolute;
-    top: 240px;
+    top: 220px;
     left: 72%;
     transform: translateX(-50%);
     font-size: clamp(0.7rem, 3.4vw, 0.9rem);
   }
 
-  .section{ padding: 76px 15px; }
+  .section{ padding: 78px 15px; }
+  .group-photo-section{ padding-bottom: 78px; }
   .who-actions{ flex-direction:column; align-items:stretch; }
   .who-actions .btn{ width:100%; }
   .values-grid{ grid-template-columns: 1fr; }
   .members-grid{ grid-template-columns: repeat(2,1fr); }
-  .members-empty-note{ margin-top: -45px; font-size:.65rem; }
+  .members-empty-note{ margin-top: 0px; font-size:.65rem; }
+  .leadership-badge{ font-size:.40rem; padding:4px 10px; }
+  .voice-pill{ font-size:.60rem; padding:4px 10px; }
+  .member-major{ font-size:.70rem; }
+  .member-verse{ font-size:.65rem; }
   .gallery-slide{ flex-basis: 100%; }
   .event-row{ grid-template-columns: 70px 1fr; }
   .event-cta{ grid-column: 1 / -1; }
@@ -904,5 +922,7 @@ p{ line-height: 1.7; color: var(--ink-soft); }
 
 @media (max-width: 480px){
   .members-grid{ grid-template-columns: 1fr 1fr; }
-  .wrap{ padding: 0 20px; }
+  .wrap{ padding: 30px 20px; }
+  .mission { padding: 200px 15px; }
+  .mission blockquote{ font-size: clamp(1.8rem, 2vw, 2rem); }
 }
