@@ -1,9 +1,4 @@
-/* ============================================================
-   JOYFUL NOISE — shared stylesheet
-   Design tokens live at the top. Everything else derives from them.
-   ============================================================ */
-
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 :root{
   /* ---- color tokens ---- */
@@ -21,7 +16,7 @@
   /* ---- type tokens ---- */
   --f-display: 'Fraunces', serif;
   --f-hero:    'Jost', sans-serif;
-  --f-body:    'Inter', sans-serif;
+  --f-body:    'DM Sans', sans-serif;
 
   /* ---- layout tokens ---- */
   --nav-h: 84px;
